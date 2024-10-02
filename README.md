@@ -1,1 +1,1 @@
-# alx-interview
+my pascals traingle attempt
