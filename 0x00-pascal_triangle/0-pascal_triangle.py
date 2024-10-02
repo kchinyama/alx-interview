@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """my attempt at pascals triangle
 """
 
