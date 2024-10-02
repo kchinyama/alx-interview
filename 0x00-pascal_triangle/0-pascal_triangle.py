@@ -5,6 +5,7 @@
 
 from math import factorial
 
+
 def pascal_triangle(n):
     if n <= 0:
         return []
@@ -16,5 +17,5 @@ def pascal_triangle(n):
             ncr = factorial(k) // (factorial(c) * factorial(k - c))
             row.append(ncr)
         triangle.append(row)
-    
+
     return triangle
