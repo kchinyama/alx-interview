@@ -8,6 +8,8 @@ from math import factorial
 
 
 def pascal_triangle(n):
+    """pascals traingle code"""
+
     if n <= 0:
         return []
 
