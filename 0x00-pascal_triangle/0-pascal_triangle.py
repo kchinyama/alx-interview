@@ -7,7 +7,7 @@ from math import factorial
 
 
 def pascal_triangle(n):
-    """pascals traingle code"""
+    # pascals traingle code
 
     triangle = []
 
