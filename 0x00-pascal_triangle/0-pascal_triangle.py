@@ -11,7 +11,7 @@ def pascal_triangle(n):
 
     triangle = []
 
-    if n <= 0:
+    if type(n) is not int or n <= 0:
         return triangle
 
     for k in range(n):
