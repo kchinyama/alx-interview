@@ -9,10 +9,11 @@ from math import factorial
 def pascal_triangle(n):
     """pascals traingle code"""
 
-    if n <= 0:
-        return []
-
     triangle = []
+
+    if n <= 0:
+        return triangle
+
     for k in range(n):
         row = []
         for c in range(k + 1):
