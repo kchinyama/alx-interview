@@ -10,7 +10,7 @@ def canUnlockAll(boxes):
     for key in range(1, len(boxes)):
         # create loop to iterate through all the boxes
 
-        flag = False # variable that checks state of the lock
+        flag = False  # variable that checks state of the lock
 
         for box in range(len(boxes)):
             # for each box in the loop check if the key opens it
