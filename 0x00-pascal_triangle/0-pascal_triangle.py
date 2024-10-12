@@ -1,28 +1,24 @@
 #!/usr/bin/python3
-"""my attempt at pascals triangle
-"""
 
+"""pascals triangle attempt
+"""
 
 from math import factorial
 
-
 def pascal_triangle(n):
-    # pascals traingle code
+    """function of pascals triangle"""
 
-    triangle = []
+    triangle = [[1]]
 
-    if type(n) is not int or n <= 0:
-        return triangle
+    if n <= 0:
+        return []
 
-    for k in range(n):
-        row = []
-        for c in range(k + 1):
-            ncr = factorial(k) // (factorial(c) * factorial(k - c))
-            row.append(ncr)
-        triangle.append(row)
+    else:
+        for i in range(1, n):
+            row = [1]
+            for j in range(1, i):
+                row.append(triangle[i-1][j-1] + triangle[i-1][j])
+            row.append(1)
+            triangle.append(row)
 
     return triangle
-
-
-if __name__ == "__main__":
-    print(pascal_triangle(n))
