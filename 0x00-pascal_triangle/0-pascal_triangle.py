@@ -5,6 +5,7 @@
 
 from math import factorial
 
+
 def pascal_triangle(n):
     """function of pascals triangle"""
 
