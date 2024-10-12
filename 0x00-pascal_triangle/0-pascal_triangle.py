@@ -1,9 +1,7 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 """pascals triangle attempt
 """
-
-from math import factorial
 
 
 def pascal_triangle(n):
